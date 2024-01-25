@@ -8,6 +8,9 @@ function App() {
 
     useEffect(() => {
         console.log("tg: ", tg);
+        console.log("initData: ", tg.initData);
+        console.log("initDataUnsafe: ", tg.initDataUnsafe);
+        console.log("user: ", tg.initDataUnsafe?.user);
         tg.ready(); // ready сигнализирует, что приложение полностью проинициализировалось и его можно отрисовывать
     }, [tg]);
 
